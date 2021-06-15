@@ -60,3 +60,44 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Subir al repositorio proyecto ya existente
+
+git init
+git add .
+git commit -m "Primer Commit"
+git remote add origin remote url_del_repositorio
+git remote -v 
+git push origin master
+
+## comandos
+
+php artisan make:migration create_mitable_table
+sirve para crear migraciones
+
+php artisan migrate
+ejecutar migraciones
+
+php artisan migrate:fresh
+borra todo y vuelve a ejecutar la migraciones
+
+php artisan make:seeder MiTablaSeeder
+crear seedes
+
+php artisan make:factory MiTablaFactory
+crear factorias
+
+php artisan make:model MiModeloFactory
+crear factorias
+
+
+php artisan db:seed
+ejecutar los seed
+
+ php artisan migrate:fresh --seed
+ borra todo ejecuta todas migracion yejecutatodoslos seeders
+
+ php artisan make:controller MiTablaController --resource 
+
+
