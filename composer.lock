@@ -4,8 +4,201 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7759431e303e2d722a264a8a991a9e84",
+    "content-hash": "e41dcb0609479c5cd1f136fdf914f263",
     "packages": [
+        {
+            "name": "acacha/admin-lte-template-laravel",
+            "version": "8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acacha/adminlte-laravel.git",
+                "reference": "c8618fc98c2b3835bda2274ebc0c75493cd682c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/c8618fc98c2b3835bda2274ebc0c75493cd682c7",
+                "reference": "c8618fc98c2b3835bda2274ebc0c75493cd682c7",
+                "shasum": ""
+            },
+            "require": {
+                "acacha/filesystem": "^0.1.2",
+                "acacha/helpers": "^0.1.4",
+                "creativeorange/gravatar": "~1.0",
+                "laravel/framework": "^8.0",
+                "laravel/ui": "^3.0",
+                "league/flysystem": "^1.0",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "laravel/dusk": "^6.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "^3.2.3"
+            },
+            "type": "package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Acacha\\AdminLTETemplateLaravel\\Providers\\AdminLTETemplateServiceProvider"
+                    ],
+                    "aliases": {
+                        "AdminLTE": "Acacha\\AdminLTETemplateLaravel\\Facades\\AdminLTE"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\AdminLTETemplateLaravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com",
+                    "homepage": "http://acacha.org"
+                }
+            ],
+            "description": "AdminLTE template applied to Laravel Scaffolding",
+            "homepage": "https://github.com/acacha/adminlte-laravel",
+            "keywords": [
+                "AdminLTE",
+                "acacha",
+                "admin",
+                "admin-lte",
+                "administrator",
+                "bootstrap",
+                "laravel",
+                "template",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/acacha/adminlte-laravel/issues",
+                "source": "https://github.com/acacha/adminlte-laravel/tree/8.0"
+            },
+            "time": "2020-09-19T14:35:26+00:00"
+        },
+        {
+            "name": "acacha/filesystem",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acacha/filesystem.git",
+                "reference": "4746999a5205c2c2e9efa1c0ed4242d845d8d28e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acacha/filesystem/zipball/4746999a5205c2c2e9efa1c0ed4242d845d8d28e",
+                "reference": "4746999a5205c2c2e9efa1c0ed4242d845d8d28e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0||~5.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\Filesystem\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com",
+                    "homepage": "https://github.com/acacha",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP filesystem with stubs compiler support",
+            "homepage": "https://github.com/acacha/filesystem",
+            "keywords": [
+                "acacha",
+                "filesystem"
+            ],
+            "support": {
+                "issues": "https://github.com/acacha/filesystem/issues",
+                "source": "https://github.com/acacha/filesystem/tree/master"
+            },
+            "time": "2017-08-31T14:32:51+00:00"
+        },
+        {
+            "name": "acacha/helpers",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acacha/helpers.git",
+                "reference": "d211d8de2534b3227be2f52c35c1b1664e938598"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acacha/helpers/zipball/d211d8de2534b3227be2f52c35c1b1664e938598",
+                "reference": "d211d8de2534b3227be2f52c35c1b1664e938598",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0||~5.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\Helpers\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com",
+                    "homepage": "https://github.com/acacha",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extra helpers for Laravel",
+            "homepage": "https://github.com/acacha/helpers",
+            "keywords": [
+                "acacha",
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/acacha/helpers/issues",
+                "source": "https://github.com/acacha/helpers/tree/master"
+            },
+            "time": "2017-06-20T13:28:48+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -117,6 +310,69 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "creativeorange/gravatar",
+            "version": "v1.0.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creativeorange/gravatar.git",
+                "reference": "8c2c1a3a59fdf05f50c9d9413dd9d2d50835e017"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/creativeorange/gravatar/zipball/8c2c1a3a59fdf05f50c9d9413dd9d2d50835e017",
+                "reference": "8c2c1a3a59fdf05f50c9d9413dd9d2d50835e017",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5|^6|^7|^8",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": "^0.6.2",
+                "orchestra/testbench": "^5.4",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Creativeorange\\Gravatar\\GravatarServiceProvider"
+                    ],
+                    "aliases": {
+                        "Gravatar": "Creativeorange\\Gravatar\\Facades\\Gravatar"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Creativeorange\\Gravatar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaco Tijssen",
+                    "email": "jaco@creativeorange.nl",
+                    "homepage": "https://www.creativeorange.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Gravatar package for retrieving gravatar image URLs or checking the existance of an image.",
+            "keywords": [
+                "avatar",
+                "gravatar",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/creativeorange/gravatar/issues",
+                "source": "https://github.com/creativeorange/gravatar/tree/v1.0.20"
+            },
+            "time": "2020-09-09T14:53:57+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1091,6 +1347,64 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.6.1"
             },
             "time": "2021-03-02T16:53:12+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/07d725813350c695c779382cbd6dac0ab8665537",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42",
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.3.0"
+            },
+            "time": "2021-05-25T16:45:33+00:00"
         },
         {
             "name": "league/commonmark",
