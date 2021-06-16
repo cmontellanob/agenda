@@ -100,4 +100,25 @@ ejecutar los seed
 
  php artisan make:controller MiTablaController --resource 
 
+php artisan make:model Profesion -mcr
+
+
+## Instalar
+ 1. clonar elrepositorio
+ 2. ingresar a la carpeta creada
+ 3. configurar el archivo .env conlas credenciales
+ 4. composer install
+ 5. php artisan migrate:fresh --seed
+ 6. php artisan serve
+
+## INstalar LTE
+1. Instalar elcomponente
+composer require acacha/admin-lte-template-laravel
+2. Configurar el app.php en config
+añadir 
+ Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+añadir a alias
+    'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+3. publicar vistas    
+php artisan vendor:publish --tag=adminlte --force
 

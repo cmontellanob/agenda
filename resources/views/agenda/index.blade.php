@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('adminlte::layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('htmlheader_title')
+	{{ trans('adminlte_lang::message.home') }}
+@endsection
 
-<body>
-    <table border="1">
-        <tr>
+
+@section('main-content')
+
+    <table class="table table-striped table-bordered table-primary">
+        <tr class="table-Warning">
             <th>
                 Nombres
             </th>
@@ -39,11 +37,11 @@
             <td>{{$agenda->sexo}}</td>
             <td>{{$agenda->celular}}</td>
             <td>{{$agenda->direccion}}</td>
-            <td><a href="{{route('agenda.edit',$agenda->id)}}">Editar</a>
+            <td><a class="btn " href="{{route('agenda.edit',$agenda->id)}}">Editar</a>
                 <form action="{{route('agenda.destroy',$agenda->id)}}" method="POST">
                     {{ csrf_field() }}
                     @method('DELETE')
-                    <input type="submit" value="eliminar">
+                    <input class="btn " type="submit" value="eliminar">
                 </form>
 
             </td>
@@ -54,6 +52,4 @@
 
     <a href="{{route('agenda.create')}}">Crear</a>
 
-</body>
-
-</html>
+@stop

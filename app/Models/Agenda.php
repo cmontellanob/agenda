@@ -14,6 +14,7 @@ class Agenda extends Model
         'apellidos',
         'sexo',
         'celular',
-        'direccion'
+        'direccion',
+        'idprofesion'
     ];
 }

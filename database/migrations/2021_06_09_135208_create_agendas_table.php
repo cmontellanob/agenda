@@ -20,7 +20,9 @@ class CreateAgendasTable extends Migration
             $table->string('sexo',1)->default('F');
             $table->string('celular',30);
             $table->string('direccion',150);
+            $table->unsignedBigInteger('idprofesion')->nullable();
             $table->timestamps();
+            $table->foreign('idprofesion')->references('id')->on('profesiones');
         });
     }
 
